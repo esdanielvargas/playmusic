@@ -152,7 +152,7 @@
         <div class="data-song left">
             <!---->
             <div class="cover">
-                <img src="./droptracks.png" alt="not compatible" id="expand_player">
+                <img src="./droptracks.png" alt="not compatible" id="expand_cover">
             </div>
             <!---->
             <div class="data-info">
@@ -212,14 +212,14 @@
                 <span class="material-symbols-outlined">playlist_add</span>
             </button>
             <!---->
-            <button class="btn" id="expand_less" aria-label="Expandir" title="Expandir">
-                <span class="material-symbols-outlined">expand_less</span>
+            <button class="btn" id="expandMore" aria-label="Expandir" title="Expandir">
+                <span class="material-symbols-outlined">expand_more</span>
             </button>
         </div>
     </div>
 
     <!-- box music -->
-    <div class="box-mega-player dark">
+    <div class="box-mega-player">
         <!-- head box -->
         <div class="box-mega-head">
             <!---->
@@ -235,42 +235,42 @@
         <div class="box-mega-boby">
             <!-- left -->
             <div class="box-mega-boby-left">
-                <!---->
+                <!-- cover & info -->
                 <div class="box-mega-boby-left-cover">
-                    <span>drop tracks</span>
                     <img src="./droptracks.png" alt="not compatible">
+                    <!-- data info -->
+                    <div class="box-mega-boby-left-data-info">
+                        <div class="box-mega-boby-left-data-info-title">just me (instrumental version)</div>
+                        <div class="box-mega-boby-left-data-info-name-artist">daniel vargas</div>
+                    </div>
                 </div>
-                <!---->
+                <!-- controls -->
                 <div class="box-mega-boby-left-box-player">
-                    <div class="box-mega-boby-left-box-player-line">
-                        <span></span>
+                    <div class="box-mega-boby-left-box-player-timeline">
+                        <div class="box-mega-boby-left-box-player-timeline-line"></div>
+                        <div class="box-mega-boby-left-box-player-timeline-times">
+                            <span>0:00</span><span>3:30</span>
+                        </div>
                     </div>
                     <div class="box-mega-boby-left-box-player-main">
                         <!---->
-                        <button class="btn" id="btnShuffle" aria-label="" title="Activar reproducción aleatoria">
-                            <span class="material-symbols-outlined">shuffle</span>
-                        </button>
-                        <!---->
-                        <button class="box-mega-boby-left-box-player-main-btn" id="" aria-label="" title="Anterior">
+                        <button class="btn-secund" id="" aria-label="" title="Anterior">
                             <span class="material-symbols-outlined">skip_previous</span>
                         </button>
                         <!---->
-                        <button class="box-mega-boby-left-box-player-main-btn" id="" aria-label="" title="Reproducir">
+                        <button class="btn-secund" id="" aria-label="" title="Reproducir">
                             <span class="material-symbols-outlined active">play_arrow</span>
                         </button>
                         <!---->
-                        <button class="box-mega-boby-left-box-player-main-btn" id="" aria-label="" title="Siguiente">
+                        <button class="btn-secund" id="" aria-label="" title="Siguiente">
                             <span class="material-symbols-outlined">skip_next</span>
-                        </button>
-                        <!---->
-                        <button class="btn" id="btnRepeat" aria-label="" title="Activar repetición">
-                            <span class="material-symbols-outlined">repeat</span>
                         </button>
                     </div>
                 </div>
             </div>
             <!-- right -->
             <div class="box-mega-boby-right">
+                <!-- head -->
                 <div class="box-mega-boby-right-head">
                     <div class="box-mega-boby-right-head-nav">
                         <!---->
@@ -287,344 +287,193 @@
                         </div>
                     </div>
                 </div>
+                <!-- body list -->
                 <div class="box-mega-boby-right-body">
                     <div class="box-mega-boby-right-body-nav">
                         <!---->
                         <div class="box-mega-boby-right-body-nav-item">
-                            <!---->
+                            <!-- cover -->
                             <div class="box-mega-boby-right-body-item-cover">
                                 <img src="/musicrecords/img/danielvargas/droptracks.png" alt="cover">
                             </div>
-                            <!---->
+                            <!-- info -->
                             <div class="box-mega-boby-right-body-item-data-info">
                                 <div class="box-mega-boby-right-body-item-data">
                                     <div class="box-mega-boby-right-body-item-data-title">raindrop (instrumental version)</div>
                                     <div class="box-mega-boby-right-body-item-data-artist">daniel vargas</div>
                                 </div>
-                                <div class="box-mega-boby-right-body-item-btn">
-                                    <!---->
-                                    <button class="btn" id="" aria-label="" title="Reproducir">
-                                        <span class="material-symbols-outlined active">play_arrow</span>
-                                    </button>
-                                    <!---->
-                                    <div class="fav">
-                                        <button class="btn" id="favorite" aria-label="" title="Agregar a favoritos">
-                                            <span class="material-symbols-outlined" id="fav">favorite</span>
-                                        </button>
-                                    </div>
-                                    <!---->
-                                    <button class="btn" id="" aria-label="" title="Agregar a una playlist">
-                                        <span class="material-symbols-outlined">playlist_add</span>
+                            </div>
+                            <!-- btn -->
+                            <div class="box-mega-boby-right-body-item-btn">
+                                <!---->
+                                <button class="btn-secund" id="" aria-label="" title="Reproducir">
+                                    <span class="material-symbols-outlined active">play_arrow</span>
+                                </button>
+                                <!---->
+                                <div class="fav">
+                                    <button class="btn-secund" id="btnFav" aria-label="Agregar a favoritos" title="Agregar a favoritos">
+                                        <span class="material-symbols-outlined fav-new">favorite</span>
                                     </button>
                                 </div>
+                                <!---->
+                                <button class="btn-secund" id="" aria-label="" title="Agregar a una playlist">
+                                    <span class="material-symbols-outlined">playlist_add</span>
+                                </button>
                             </div>
                         </div>
                         <!---->
                         <div class="box-mega-boby-right-body-nav-item">
-                            <!---->
+                            <!-- cover -->
                             <div class="box-mega-boby-right-body-item-cover">
                                 <img src="/musicrecords/img/danielvargas/droptracks.png" alt="cover">
                             </div>
-                            <!---->
+                            <!-- info -->
                             <div class="box-mega-boby-right-body-item-data-info">
                                 <div class="box-mega-boby-right-body-item-data">
                                     <div class="box-mega-boby-right-body-item-data-title">clouds (instrumental version)</div>
                                     <div class="box-mega-boby-right-body-item-data-artist">daniel vargas</div>
                                 </div>
-                                <div class="box-mega-boby-right-body-item-btn">
-                                    <!---->
-                                    <button class="btn" id="" aria-label="" title="Reproducir">
-                                        <span class="material-symbols-outlined active">play_arrow</span>
-                                    </button>
-                                    <!---->
-                                    <button class="btn" id="favorite" aria-label="" title="Agregar a favoritos">
-                                        <span class="material-symbols-outlined">favorite</span>
-                                    </button>
-                                    <!---->
-                                    <button class="btn" id="" aria-label="" title="Agregar a una playlist">
-                                        <span class="material-symbols-outlined">playlist_add</span>
+                            </div>
+                            <!-- btn -->
+                            <div class="box-mega-boby-right-body-item-btn">
+                                <!---->
+                                <button class="btn-secund" id="" aria-label="" title="Reproducir">
+                                    <span class="material-symbols-outlined active">play_arrow</span>
+                                </button>
+                                <!---->
+                                <div class="fav">
+                                    <button class="btn-secund" id="btnFav" aria-label="Agregar a favoritos" title="Agregar a favoritos">
+                                        <span class="material-symbols-outlined fav-new">favorite</span>
                                     </button>
                                 </div>
+                                <!---->
+                                <button class="btn-secund" id="" aria-label="" title="Agregar a una playlist">
+                                    <span class="material-symbols-outlined">playlist_add</span>
+                                </button>
                             </div>
                         </div>
                         <!---->
                         <div class="box-mega-boby-right-body-nav-item">
-                            <!---->
+                            <!-- cover -->
                             <div class="box-mega-boby-right-body-item-cover">
                                 <img src="/musicrecords/img/danielvargas/droptracks.png" alt="cover">
                             </div>
-                            <!---->
+                            <!-- info -->
                             <div class="box-mega-boby-right-body-item-data-info">
                                 <div class="box-mega-boby-right-body-item-data">
-                                    <div class="box-mega-boby-right-body-item-data-title">Just me (instrumental version)</div>
+                                    <div class="box-mega-boby-right-body-item-data-title">just me (instrumental version)</div>
                                     <div class="box-mega-boby-right-body-item-data-artist">daniel vargas</div>
                                 </div>
-                                <div class="box-mega-boby-right-body-item-btn">
-                                    <!---->
-                                    <button class="btn" id="" aria-label="" title="Reproducir">
-                                        <span class="material-symbols-outlined active">play_arrow</span>
-                                    </button>
-                                    <!---->
-                                    <button class="btn" id="favorite" aria-label="" title="Agregar a favoritos">
-                                        <span class="material-symbols-outlined" id="fav">favorite</span>
-                                    </button>
-                                    <!---->
-                                    <button class="btn" id="" aria-label="" title="Agregar a una playlist">
-                                        <span class="material-symbols-outlined">playlist_add</span>
+                            </div>
+                            <!-- btn -->
+                            <div class="box-mega-boby-right-body-item-btn">
+                                <!---->
+                                <button class="btn-secund" id="" aria-label="" title="Reproducir">
+                                    <span class="material-symbols-outlined active">play_arrow</span>
+                                </button>
+                                <!---->
+                                <div class="fav">
+                                    <button class="btn-secund" id="btnFav" aria-label="Agregar a favoritos" title="Agregar a favoritos">
+                                        <span class="material-symbols-outlined fav-new">favorite</span>
                                     </button>
                                 </div>
+                                <!---->
+                                <button class="btn-secund" id="" aria-label="" title="Agregar a una playlist">
+                                    <span class="material-symbols-outlined">playlist_add</span>
+                                </button>
                             </div>
                         </div>
                         <!---->
                         <div class="box-mega-boby-right-body-nav-item">
-                            <!---->
+                            <!-- cover -->
                             <div class="box-mega-boby-right-body-item-cover">
                                 <img src="/musicrecords/img/danielvargas/droptracks.png" alt="cover">
                             </div>
-                            <!---->
+                            <!-- info -->
                             <div class="box-mega-boby-right-body-item-data-info">
                                 <div class="box-mega-boby-right-body-item-data">
-                                    <div class="box-mega-boby-right-body-item-data-title">Waitings (instrumental version)</div>
+                                    <div class="box-mega-boby-right-body-item-data-title">waiting (instrumental version)</div>
                                     <div class="box-mega-boby-right-body-item-data-artist">daniel vargas</div>
                                 </div>
-                                <div class="box-mega-boby-right-body-item-btn">
-                                    <!---->
-                                    <button class="btn" id="" aria-label="" title="Reproducir">
-                                        <span class="material-symbols-outlined active">play_arrow</span>
-                                    </button>
-                                    <!---->
-                                    <button class="btn" id="favorite" aria-label="" title="Agregar a favoritos">
-                                        <span class="material-symbols-outlined">favorite</span>
-                                    </button>
-                                    <!---->
-                                    <button class="btn" id="" aria-label="" title="Agregar a una playlist">
-                                        <span class="material-symbols-outlined">playlist_add</span>
+                            </div>
+                            <!-- btn -->
+                            <div class="box-mega-boby-right-body-item-btn">
+                                <!---->
+                                <button class="btn-secund" id="" aria-label="" title="Reproducir">
+                                    <span class="material-symbols-outlined active">play_arrow</span>
+                                </button>
+                                <!---->
+                                <div class="fav">
+                                    <button class="btn-secund" id="btnFav" aria-label="Agregar a favoritos" title="Agregar a favoritos">
+                                        <span class="material-symbols-outlined fav-new">favorite</span>
                                     </button>
                                 </div>
+                                <!---->
+                                <button class="btn-secund" id="" aria-label="" title="Agregar a una playlist">
+                                    <span class="material-symbols-outlined">playlist_add</span>
+                                </button>
                             </div>
                         </div>
                         <!---->
                         <div class="box-mega-boby-right-body-nav-item">
-                            <!---->
+                            <!-- cover -->
                             <div class="box-mega-boby-right-body-item-cover">
                                 <img src="/musicrecords/img/danielvargas/droptracks.png" alt="cover">
                             </div>
-                            <!---->
-                            <div class="box-mega-boby-right-body-item-data-info">
-                                <div class="box-mega-boby-right-body-item-data">
-                                    <div class="box-mega-boby-right-body-item-data-title">look at me (instrumental version)</div>
-                                    <div class="box-mega-boby-right-body-item-data-artist">daniel vargas</div>
-                                </div>
-                                <div class="box-mega-boby-right-body-item-btn">
-                                    <!---->
-                                    <button class="btn" id="" aria-label="" title="Reproducir">
-                                        <span class="material-symbols-outlined active">play_arrow</span>
-                                    </button>
-                                    <!---->
-                                    <button class="btn" id="favorite" aria-label="" title="Agregar a favoritos">
-                                        <span class="material-symbols-outlined" id="fav">favorite</span>
-                                    </button>
-                                    <!---->
-                                    <button class="btn" id="" aria-label="" title="Agregar a una playlist">
-                                        <span class="material-symbols-outlined">playlist_add</span>
-                                    </button>
-                                </div>
-                            </div>
-                        </div>
-                        <!---->
-                        <div class="box-mega-boby-right-body-nav-item">
-                            <!---->
-                            <div class="box-mega-boby-right-body-item-cover">
-                                <img src="/musicrecords/img/danielvargas/droptracks.png" alt="cover">
-                            </div>
-                            <!---->
-                            <div class="box-mega-boby-right-body-item-data-info">
-                                <div class="box-mega-boby-right-body-item-data">
-                                    <div class="box-mega-boby-right-body-item-data-title">Thunder (instrumental version)</div>
-                                    <div class="box-mega-boby-right-body-item-data-artist">daniel vargas</div>
-                                </div>
-                                <div class="box-mega-boby-right-body-item-btn">
-                                    <!---->
-                                    <button class="btn" id="" aria-label="" title="Reproducir">
-                                        <span class="material-symbols-outlined active">play_arrow</span>
-                                    </button>
-                                    <!---->
-                                    <button class="btn" id="favorite" aria-label="" title="Agregar a favoritos">
-                                        <span class="material-symbols-outlined">favorite</span>
-                                    </button>
-                                    <!---->
-                                    <button class="btn" id="" aria-label="" title="Agregar a una playlist">
-                                        <span class="material-symbols-outlined">playlist_add</span>
-                                    </button>
-                                </div>
-                            </div>
-                        </div>
-                        <!---->
-                        <div class="box-mega-boby-right-body-nav-item">
-                            <!---->
-                            <div class="box-mega-boby-right-body-item-cover">
-                                <img src="/musicrecords/img/danielvargas/droptracks.png" alt="cover">
-                            </div>
-                            <!---->
-                            <div class="box-mega-boby-right-body-item-data-info">
-                                <div class="box-mega-boby-right-body-item-data">
-                                    <div class="box-mega-boby-right-body-item-data-title">raindrop (instrumental version)</div>
-                                    <div class="box-mega-boby-right-body-item-data-artist">daniel vargas</div>
-                                </div>
-                                <div class="box-mega-boby-right-body-item-btn">
-                                    <!---->
-                                    <button class="btn" id="" aria-label="" title="Reproducir">
-                                        <span class="material-symbols-outlined active">play_arrow</span>
-                                    </button>
-                                    <!---->
-                                    <button class="btn" id="favorite" aria-label="" title="Agregar a favoritos">
-                                        <span class="material-symbols-outlined" id="fav">favorite</span>
-                                    </button>
-                                    <!---->
-                                    <button class="btn" id="" aria-label="" title="Agregar a una playlist">
-                                        <span class="material-symbols-outlined">playlist_add</span>
-                                    </button>
-                                </div>
-                            </div>
-                        </div>
-                        <!---->
-                        <div class="box-mega-boby-right-body-nav-item">
-                            <!---->
-                            <div class="box-mega-boby-right-body-item-cover">
-                                <img src="/musicrecords/img/danielvargas/droptracks.png" alt="cover">
-                            </div>
-                            <!---->
-                            <div class="box-mega-boby-right-body-item-data-info">
-                                <div class="box-mega-boby-right-body-item-data">
-                                    <div class="box-mega-boby-right-body-item-data-title">clouds (instrumental version)</div>
-                                    <div class="box-mega-boby-right-body-item-data-artist">daniel vargas</div>
-                                </div>
-                                <div class="box-mega-boby-right-body-item-btn">
-                                    <!---->
-                                    <button class="btn" id="" aria-label="" title="Reproducir">
-                                        <span class="material-symbols-outlined active">play_arrow</span>
-                                    </button>
-                                    <!---->
-                                    <button class="btn" id="favorite" aria-label="" title="Agregar a favoritos">
-                                        <span class="material-symbols-outlined">favorite</span>
-                                    </button>
-                                    <!---->
-                                    <button class="btn" id="" aria-label="" title="Agregar a una playlist">
-                                        <span class="material-symbols-outlined">playlist_add</span>
-                                    </button>
-                                </div>
-                            </div>
-                        </div>
-                        <!---->
-                        <div class="box-mega-boby-right-body-nav-item">
-                            <!---->
-                            <div class="box-mega-boby-right-body-item-cover">
-                                <img src="/musicrecords/img/danielvargas/droptracks.png" alt="cover">
-                            </div>
-                            <!---->
-                            <div class="box-mega-boby-right-body-item-data-info">
-                                <div class="box-mega-boby-right-body-item-data">
-                                    <div class="box-mega-boby-right-body-item-data-title">Just me (instrumental version)</div>
-                                    <div class="box-mega-boby-right-body-item-data-artist">daniel vargas</div>
-                                </div>
-                                <div class="box-mega-boby-right-body-item-btn">
-                                    <!---->
-                                    <button class="btn" id="" aria-label="" title="Reproducir">
-                                        <span class="material-symbols-outlined active">play_arrow</span>
-                                    </button>
-                                    <!---->
-                                    <button class="btn" id="favorite" aria-label="" title="Agregar a favoritos">
-                                        <span class="material-symbols-outlined" id="fav">favorite</span>
-                                    </button>
-                                    <!---->
-                                    <button class="btn" id="" aria-label="" title="Agregar a una playlist">
-                                        <span class="material-symbols-outlined">playlist_add</span>
-                                    </button>
-                                </div>
-                            </div>
-                        </div>
-                        <!---->
-                        <div class="box-mega-boby-right-body-nav-item">
-                            <!---->
-                            <div class="box-mega-boby-right-body-item-cover">
-                                <img src="/musicrecords/img/danielvargas/droptracks.png" alt="cover">
-                            </div>
-                            <!---->
-                            <div class="box-mega-boby-right-body-item-data-info">
-                                <div class="box-mega-boby-right-body-item-data">
-                                    <div class="box-mega-boby-right-body-item-data-title">Waitings (instrumental version)</div>
-                                    <div class="box-mega-boby-right-body-item-data-artist">daniel vargas</div>
-                                </div>
-                                <div class="box-mega-boby-right-body-item-btn">
-                                    <!---->
-                                    <button class="btn" id="" aria-label="" title="Reproducir">
-                                        <span class="material-symbols-outlined active">play_arrow</span>
-                                    </button>
-                                    <!---->
-                                    <button class="btn" id="favorite" aria-label="" title="Agregar a favoritos">
-                                        <span class="material-symbols-outlined">favorite</span>
-                                    </button>
-                                    <!---->
-                                    <button class="btn" id="" aria-label="" title="Agregar a una playlist">
-                                        <span class="material-symbols-outlined">playlist_add</span>
-                                    </button>
-                                </div>
-                            </div>
-                        </div>
-                        <!---->
-                        <div class="box-mega-boby-right-body-nav-item">
-                            <!---->
-                            <div class="box-mega-boby-right-body-item-cover">
-                                <img src="/musicrecords/img/danielvargas/droptracks.png" alt="cover">
-                            </div>
-                            <!---->
+                            <!-- info -->
                             <div class="box-mega-boby-right-body-item-data-info">
                                 <div class="box-mega-boby-right-body-item-data">
                                     <div class="box-mega-boby-right-body-item-data-title">look at me (instrumental version)</div>
                                     <div class="box-mega-boby-right-body-item-data-artist">daniel vargas</div>
                                 </div>
-                                <div class="box-mega-boby-right-body-item-btn">
-                                    <!---->
-                                    <button class="btn" id="" aria-label="" title="Reproducir">
-                                        <span class="material-symbols-outlined active">play_arrow</span>
-                                    </button>
-                                    <!---->
-                                    <button class="btn" id="favorite" aria-label="" title="Agregar a favoritos">
-                                        <span class="material-symbols-outlined" id="fav">favorite</span>
-                                    </button>
-                                    <!---->
-                                    <button class="btn" id="" aria-label="" title="Agregar a una playlist">
-                                        <span class="material-symbols-outlined">playlist_add</span>
+                            </div>
+                            <!-- btn -->
+                            <div class="box-mega-boby-right-body-item-btn">
+                                <!---->
+                                <button class="btn-secund" id="" aria-label="" title="Reproducir">
+                                    <span class="material-symbols-outlined active">play_arrow</span>
+                                </button>
+                                <!---->
+                                <div class="fav">
+                                    <button class="btn-secund" id="btnFav" aria-label="Agregar a favoritos" title="Agregar a favoritos">
+                                        <span class="material-symbols-outlined fav-new">favorite</span>
                                     </button>
                                 </div>
+                                <!---->
+                                <button class="btn-secund" id="" aria-label="" title="Agregar a una playlist">
+                                    <span class="material-symbols-outlined">playlist_add</span>
+                                </button>
                             </div>
                         </div>
                         <!---->
                         <div class="box-mega-boby-right-body-nav-item">
-                            <!---->
+                            <!-- cover -->
                             <div class="box-mega-boby-right-body-item-cover">
                                 <img src="/musicrecords/img/danielvargas/droptracks.png" alt="cover">
                             </div>
-                            <!---->
+                            <!-- info -->
                             <div class="box-mega-boby-right-body-item-data-info">
                                 <div class="box-mega-boby-right-body-item-data">
-                                    <div class="box-mega-boby-right-body-item-data-title">Thunder (instrumental version)</div>
+                                    <div class="box-mega-boby-right-body-item-data-title">thunder (instrumental version)</div>
                                     <div class="box-mega-boby-right-body-item-data-artist">daniel vargas</div>
                                 </div>
-                                <div class="box-mega-boby-right-body-item-btn">
-                                    <!---->
-                                    <button class="btn" id="" aria-label="" title="Reproducir">
-                                        <span class="material-symbols-outlined active">play_arrow</span>
-                                    </button>
-                                    <!---->
-                                    <button class="btn" id="favorite" aria-label="" title="Agregar a favoritos">
-                                        <span class="material-symbols-outlined">favorite</span>
-                                    </button>
-                                    <!---->
-                                    <button class="btn" id="" aria-label="" title="Agregar a una playlist">
-                                        <span class="material-symbols-outlined">playlist_add</span>
+                            </div>
+                            <!-- btn -->
+                            <div class="box-mega-boby-right-body-item-btn">
+                                <!---->
+                                <button class="btn-secund" id="" aria-label="" title="Reproducir">
+                                    <span class="material-symbols-outlined active">play_arrow</span>
+                                </button>
+                                <!---->
+                                <div class="fav">
+                                    <button class="btn-secund" id="btnFav" aria-label="Agregar a favoritos" title="Agregar a favoritos">
+                                        <span class="material-symbols-outlined fav-new">favorite</span>
                                     </button>
                                 </div>
+                                <!---->
+                                <button class="btn-secund" id="" aria-label="" title="Agregar a una playlist">
+                                    <span class="material-symbols-outlined">playlist_add</span>
+                                </button>
                             </div>
                         </div>
                     </div>
