@@ -16,20 +16,19 @@
 
 @keyframes slidein {
     from {
-      margin-left: 20%;
+      margin-left: 10%;
       width: 300%;
     }
   
     to {
-      margin-left: -40%;
+      margin-left: -12%;
       width: 300%;
     }
-  }
+}
 
 @media (max-width: 560px) {
 
     /* header */
-
     .title {
         font: 500 20px sans-serif;
         margin: 0 0 0 10px;
@@ -40,7 +39,6 @@
     }
 
     /* menu */
-
     .menu {
         width: 50%;
     }
@@ -54,7 +52,6 @@
     }
     
     /* player */
-    
     .player {
         height: 70px;
         bottom: 0;
@@ -123,7 +120,6 @@
     }
 
     /* box mega player */
-
     .box-mega-player {
         z-index: 8;
         bottom: -100%;
@@ -162,7 +158,6 @@
     .box-mega-boby-left-cover {
         width: 300px;
         height: auto;
-        box-shadow: 0 0 10px lightsteelblue;
     }
 
     .box-mega-boby-left-box-player {
@@ -197,7 +192,6 @@
 @media (max-width: 400px) {
 
     /* default decoration */
-
     .left {
         margin: 0 0 0 20px;
     }
@@ -207,14 +201,12 @@
     }
 
     /* header */
-
     .btnPhoto {
         width: 26px;
         height: 26px;
     }
 
     /* menu */
-
     .menu {
         width: 240px;
     }
@@ -223,19 +215,21 @@
         margin: 0 0 0 10px;
     }
 
-    /* player */
-    
+    /* player */ 
     .data-song {
         width: 340px;
         height: 100%;
     }
     
     .cover {
+        z-index: 4;
         width: 70px;
         height: 100%;
         display: flex;
         align-items: center;
         justify-content: center;
+        background: var(--black);
+        box-shadow: -10px 30px 10px 20px var(--black);
     }
     
     .cover img {
@@ -257,107 +251,6 @@
         text-transform: capitalize;
         font: 600 12px sans-serif;
         margin: 0 8px 0 14px;
-    }
-    
-    .more-dats-info {
-        display: flex;
-        align-items: center;
-        margin: 0 4px 0 14px;
-        justify-content: center;
-    }
-}
-
-@media (max-width: 360px) {
-
-    /* default decoration */
-
-    .left {
-        margin: 0 0 0 15px;
-    }
-
-    .right {
-        margin: 0 15px 0 0;
-    }
-
-    /* player */
-    
-    .title-song {
-        margin: 0 0 0 14px;
-    }
-}
-
-@media (max-width: 260px) {
-
-    /* default decorations */
-
-    .left {
-        margin: 0;
-    }
-
-    .right {
-        margin: 0;
-    }
-
-    /* header */
-    
-    .title a {
-        display: none;
-    }
-
-    #btnBell {
-        display: none;
-    }
-
-    /* menu */
-
-    .menu {
-        width: 200px;
-    }
-
-    /* player */
-
-    .player {
-        width: 260px;
-        height: 60px;
-        background: var(--black);
-    }
-    
-    .data-song {
-        width: 220px;
-        height: 100%;
-    }
-    
-    .cover {
-        z-index: 4;
-        width: 60px;
-        height: 60px;
-        background: var(--black);
-        box-shadow: -10px 30px 10px 20px var(--black);
-    }
-    
-    .cover img {
-        width: 100%;
-        height: 100%;
-        margin: 0 0 0 10px;
-        border-radius: 0;
-    }
-    
-    .data-info {
-        width: 160px;
-        height: 80%;
-        display: flex;
-        flex-direction: column;
-        align-items: flex-start;
-        justify-content: space-around;
-    }
-    
-    .title-song {
-        z-index: 3;
-        width: auto;
-        height: 20px;
-        display: flex;
-        align-items: center;
-        margin: 0 0 0 10px;
         text-overflow: clip;
         white-space: nowrap;
         animation: 8s infinite alternate slidein;
@@ -366,25 +259,108 @@
     .more-dats-info {
         display: flex;
         align-items: center;
-        margin: 0 10px 0 10px;
+        margin: 0 4px 0 14px;
         justify-content: center;
     }
 
-    .artist-name {
-        margin: 0 0 0 15px;
-    }
-
     .fav {
-        display: none;
-    }
-    
-    .player-play {
-        z-index: 4;
-        width: 60px;
-        height: 100%;
         background: var(--black);
         box-shadow: 0px 30px 10px 20px var(--black);
-        margin: 0 10px 0 0;
     }
-    
+
+    /* head box music */
+    .box-mega-head {
+        height: 60px;
+    }
+
+    .btn.left {
+        margin: 0 0 0 20px;
+    }
+
+    .btn.right {
+        margin: 0 20px 0 0;
+    }
+
+    /* body box music {left} */
+    .box-mega-boby-left {
+        width: 100%;
+    }
+
+    .box-mega-boby-left-cover {
+        margin: 40px 0 0 0;
+    }
+
+    .box-mega-boby-left-cover img {
+        width: 300px;
+        height: 300px;
+        overflow: hidden;
+        box-shadow: 0 0 30px 0 var(--glass);
+        margin: 0 0 40px 0;
+    }
+
+    .box-mega-boby-left-data-info {
+        height: 40px;
+        background: transparent;
+        margin: 0 0 15px 0; padding: 0;
+        box-shadow: 0 0 10px transparent;
+    }
+
+    .box-mega-boby-left-data-info-title {
+        margin:0;padding: 0;
+    }
+
+    .box-mega-boby-left-data-info-name-artist {
+        margin: 0;padding: 0;
+    }
+
+    /* controls */
+    .box-mega-boby-left-box-player {
+        width: 100%;
+        height: auto;
+        background: var(--black-bg);
+    }
+
+    /* timeline */
+    .box-mega-boby-left-box-player-timeline {
+        width: 300px;
+        margin: 6px 0 0 0;
+    }
+
+    .box-mega-boby-left-box-player-timeline-line {
+        width: 300px;
+        cursor: pointer;
+        margin: 4px 0 0 0;
+        border: 1px solid var(--black-border);
+    }
+
+    .box-mega-boby-left-box-player-timeline-line:hover {
+        width: 300px;
+        cursor: pointer;
+        margin: 4px 0 0 0;
+        border: 1px solid seagreen;
+    }
+
+    .box-mega-boby-left-box-player-timeline-times {
+        color: var(--white-text);
+        font: 400 12px sans-serif;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        margin: 6px 0 0 0;
+    }
+
+    /* btn controls */
+    .box-mega-boby-left-box-player-main {
+        width: 300px;
+        height: auto;
+        display: flex;
+        align-items: center;
+        justify-content: space-around;
+        margin: 10px 0 0 0;
+    }
+
+    /* body box music {right} */
+    .box-mega-boby-right {
+        display: none;
+    }
 }
