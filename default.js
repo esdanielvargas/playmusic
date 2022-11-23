@@ -1,17 +1,17 @@
 // menu
-const btnMenu = document.getElementById('btnMenu');
+const btnOpenMenu = document.getElementById('btnOpenMenu');
 const boxMenu = document.querySelector('.menu');
-const btnMenuClose = document.getElementById('btnMenuClose');
+const btnCloseMenu = document.getElementById('btnCloseMenu');
 const boxBodyMenu = document.querySelector('.box-body-menu');
 
 // abrir menu & bloquear sitio web
-btnMenu.addEventListener('click', () => {
+btnOpenMenu.addEventListener('click', () => {
     boxMenu.classList.toggle('active');
     boxBodyMenu.classList.toggle('active');
 })
 
 // cerrar menu & caja cuerpo {tocando button}
-btnMenuClose.addEventListener('click', () => {
+btnCloseMenu.addEventListener('click', () => {
     boxMenu.classList.remove('active');
     boxBodyMenu.classList.remove('active');
 })
@@ -22,23 +22,12 @@ boxBodyMenu.addEventListener('click', () => {
     boxBodyMenu.classList.remove('active');
 })
 
-// pages from menu
-const home = document.getElementById('home');
-const explore = document.getElementById('explore');
-const library = document.getElementById('library');
-const podcasts = document.getElementById('podcasts');
-
-// home
-home.addEventListener('click', () => {
-    
-})
-
 // favorite
 const favorite = document.getElementById('favorite');
 const fav = document.getElementById('fav');
 
 favorite.addEventListener('click', () => {
-    fav.classList.toggle('active');
+    fav.classList.toggle('active-accent');
 })
 
 //  volume
