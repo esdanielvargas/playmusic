@@ -9,13 +9,14 @@
     <meta name="keywords" content="Music, Música, Play Music, free, gratis">
     <link rel="shortcut icon" href="./favicon.png" type="image/x-icon">
     <link rel="stylesheet" href="./default.css">
+    <link rel="stylesheet" href="./responsive.css">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
     <script defer src="./default.js"></script>
     <title>Play Music</title>
 </head>
 <body>
 
-    <!---->
+    <!-- header -->
     <header class="header">
         <!-- left header -->
         <div class="sections left">
@@ -42,11 +43,7 @@
         <!-- right header -->
         <div class="sections right">
             <!---->
-            <button class="btn" id="dark_mode" aria-label="Cambiar a modo oscuro" title="Cambiar a modo oscuro">
-                <span class="material-symbols-outlined">dark_mode</span>
-            </button>
-            <!---->
-            <button class="btn" id="" aria-label="Ir a notificaciones" title="Notificaciones">
+            <button class="btn" id="btnBell" aria-label="Ir a notificaciones" title="Notificaciones">
                 <span class="material-symbols-outlined">notifications</span>
             </button>
             <!---->
@@ -145,7 +142,7 @@
                 </div>
             </a>
         </div>
-        <!---->
+        <!-- transparent -->
         <div class="box-body-menu"></div>
     </header>
 
@@ -174,13 +171,7 @@
             </div>
         </div>
         <!---->
-        <div class="player-play">
-            <!----
-            <audio controls preload class="audio-player" id="player">
-                <source src="./droptracks/Just me (Instrumental Version).mp3" type="audio/mp3" id="source">
-                Audio no soportado.
-            </audio>-->
-
+        <div class="player-play right">
             <!---->
             <button class="btnShuffle" id="btnShuffle" aria-label="" title="Activar reproducción aleatoria" hidden>
                 <span class="material-symbols-outlined">shuffle</span>
@@ -641,5 +632,6 @@
             </div>
         </div>
     </div>
+    
 </body>
 </html>
