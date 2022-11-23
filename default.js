@@ -27,7 +27,15 @@ const favorite = document.getElementById('favorite');
 const fav = document.getElementById('fav');
 
 favorite.addEventListener('click', () => {
-    fav.classList.toggle('active-accent');
+    fav.classList.toggle('seagreen');
+})
+
+// favorite two
+const btnFav = document.getElementById('btnFav');
+const favNew = document.querySelector('.fav-new');
+
+btnFav.addEventListener('click', () => {
+    favNew.classList.toggle('seagreen');
 })
 
 //  volume
@@ -47,7 +55,6 @@ lyrics.addEventListener('click', () => {
 })
 
 // player
-
 const Shuffle = document.getElementById('btnShuffle');
 const btnShuffle = document.querySelector('.btnShuffle');
 
@@ -66,27 +73,26 @@ Repeat.addEventListener('click', () => {
     btnShuffle.classList.remove('active');
 })
 
-const btnCover = document.getElementById('expand_player');
-const boxPlayer = document.querySelector('.box-mega-player');
+// audio player
+const btnCover = document.getElementById('expand_cover');
 const btnExpandMore = document.getElementById('expand_more');
-const btnExpandLess = document.getElementById('expand_less');
-const playArrow = document.getElementById('play_arrow');
+const boxPlayer = document.querySelector('.box-mega-player');
 
-// open {mobile}
+// open {cover}
 btnCover.addEventListener('click', () => {
     boxPlayer.classList.toggle('active');
 })
 
-playArrow.addEventListener('click', () => {
-    boxPlayer.classList.toggle('active');
-})
-
-// open {laptop}
-btnExpandLess.addEventListener('click', () => {
-    boxPlayer.classList.toggle('active');
-})
-
-// cerrar reproductor
+// close {button}
 btnExpandMore.addEventListener('click', () => {
     boxPlayer.classList.remove('active');
+})
+
+// cerrar la barra de reproducción
+const ExpandMore = document.getElementById ('expandMore');
+const PlayerBar = document.querySelector('.player');
+
+// close {barra}
+ExpandMore.addEventListener('click', () => {
+    PlayerBar.classList.toggle('active');
 })
