@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="title" content="Play Music - Explore">
+    <link rel="shortcut icon" href="./favicon.png" type="image/x-icon">
+    <link rel="stylesheet" href="./default.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+    <script defer src="./default.js"></script>
+    <title>Play Music - Explorar</title>
+</head>
+<body>
+
+    <!-- header -->
+    <header class="header">
+        <!-- left header -->
+        <div class="sections left">
+            <!-- btn open menu -->
+            <button class="btn" id="btnOpenMenu" aria-label="Abrir menú" title="Abrir menú">
+                <span class="material-symbols-outlined">menu</span>
+            </button>
+            <!-- title -->
+            <div class="title">
+                <a href="./index.html" target="_top">
+                    Play Music
+                </a>
+            </div>
+        </div>
+        <!-- center header -->
+        <div class="search">
+            <form action="explore.html" method="get" class="form-search" autocomplete="off">
+                <button type="submit" class="btn-search">
+                    <span class="material-symbols-outlined">search</span>
+                </button>
+                <input type="search" name="search" id="search" placeholder="Buscar" class="box-search">
+            </form>
+        </div>
+        <!-- right header -->
+        <div class="sections right">
+            <!---->
+            <button class="btn" id="btnBell" aria-label="Ir a notificaciones" title="Notificaciones">
+                <span class="material-symbols-outlined">notifications</span>
+            </button>
+            <!---->
+            <button class="btn" id="" aria-label="Ir a cuenta" title="Cuenta">
+                <img src="./profile-side-one.jpg" alt="not compatible" class="btnPhoto">
+            </button>
+        </div>
+    </header>
+
+    <!-- menu -->
+    <header class="menu">
+        <!-- head menu -->
+        <div class="head-menu">
+            <div class="sections left">
+                <!-- btn close menu -->
+                <button class="btn" id="btnCloseMenu" aria-label="Cerrar menú" title="Cerrar menú">
+                    <span class="material-symbols-outlined">close</span>
+                </button>
+                <!-- title -->
+                <div class="title">
+                    <a href="./index.html" target="_top">
+                        Play Music
+                    </a>
+                </div>
+            </div>
+        </div>
+        <!-- body menu -->
+        <div class="body-menu">
+            <!-- home -->
+            <a href="./index.html" class="linked">
+                <div class="body-menu-item">
+                    <div class="body-menu-item-design">
+                        <div class="body-menu-item-design-hidden">
+                            <span class="material-symbols-outlined active footer-menu-icon">home</span>
+                            <span class="footer-menu-text">Inicio</span>
+                        </div>
+                    </div>
+                </div>
+            </a>
+            <!-- explore -->
+            <a href="./explore.html" class="linked">
+                <div class="body-menu-item">
+                    <div class="body-menu-item-design">
+                        <div class="body-menu-item-design-hidden">
+                            <span class="material-symbols-outlined footer-menu-icon">explore</span>
+                            <span class="footer-menu-text">Explorar</span>
+                        </div>
+                    </div>
+                </div>
+            </a>
+            <!-- library -->
+            <a href="./library.html" class="linked">
+                <div class="body-menu-item">
+                    <div class="body-menu-item-design">
+                        <div class="body-menu-item-design-hidden">
+                            <span class="material-symbols-outlined footer-menu-icon">library_music</span>
+                            <span class="footer-menu-text">bibliotecla</span>
+                        </div>
+                    </div>
+                </div>
+            </a>
+            <!-- podcasts -->
+            <a href="./podcasts.html" class="linked">
+                <div class="body-menu-item">
+                    <div class="body-menu-item-design">
+                        <div class="body-menu-item-design-hidden">
+                            <span class="material-symbols-outlined footer-menu-icon">podcasts</span>
+                            <span class="footer-menu-text">podcasts</span>
+                        </div>
+                    </div>
+                </div>
+            </a>
+        </div>
+        <!-- footer menu -->
+        <div class="footer-menu">
+            <!-- settings -->
+            <a href="" class="linked">
+                <div class="footer-menu-item">
+                    <div class="footer-menu-item-design">
+                        <div class="footer-menu-item-design-hidden">
+                            <span class="material-symbols-outlined footer-menu-icon">settings</span>
+                            <span class="footer-menu-text">Configuración</span>
+                        </div>
+                    </div>
+                </div>
+            </a>
+            <!-- help -->
+            <a href="" class="linked">
+                <div class="footer-menu-item">
+                    <div class="footer-menu-item-design">
+                        <div class="footer-menu-item-design-hidden">
+                            <span class="material-symbols-outlined footer-menu-icon">help</span>
+                            <span class="footer-menu-text">Ayuda</span>
+                        </div>
+                    </div>
+                </div>
+            </a>
+        </div>
+        <!-- transparent -->
+        <div class="box-body-menu"></div>
+    </header>
+    
+</body>
+</html>
