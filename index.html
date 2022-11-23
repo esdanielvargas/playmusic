@@ -17,153 +17,184 @@
 
     <!---->
     <header class="header">
-        <!---->
+        <!-- left header -->
         <div class="sections left">
-                <button class="btn" id="btnMenu" aria-label="Abrir menú" title="Abrir menú">
-                    <span class="material-symbols-outlined">menu</span>
-                </button>
-            <div class="title">Play Music</div>
+            <!-- btn open menu -->
+            <button class="btn" id="btnOpenMenu" aria-label="Abrir menú" title="Abrir menú">
+                <span class="material-symbols-outlined">menu</span>
+            </button>
+            <!-- title -->
+            <div class="title">
+                <a href="./index.html" target="_top">
+                    Play Music
+                </a>
+            </div>
         </div>
-        <!---->
+        <!-- center header -->
         <div class="search">
-            <form action="" method="get" class="form-search" autocomplete="off">
-                <button class="btn-search">
-                    <span class="material-symbols-outlined icon-q">search</span>
+            <form action="explore.html" method="get" class="form-search" autocomplete="off">
+                <button type="submit" class="btn-search">
+                    <span class="material-symbols-outlined">search</span>
                 </button>
                 <input type="search" name="search" id="search" placeholder="Buscar" class="box-search">
             </form>
         </div>
-        <!---->
+        <!-- right header -->
         <div class="sections right">
             <!---->
-            <button class="btn" id="dark_mode" aria-label="" title="Cambiar a modo oscuro">
+            <button class="btn" id="dark_mode" aria-label="Cambiar a modo oscuro" title="Cambiar a modo oscuro">
                 <span class="material-symbols-outlined">dark_mode</span>
             </button>
             <!---->
-            <button class="btn" id="" aria-label="btnBell" title="Notificaciones">
+            <button class="btn" id="" aria-label="Ir a notificaciones" title="Notificaciones">
                 <span class="material-symbols-outlined">notifications</span>
             </button>
             <!---->
-            <button class="btn" id="" aria-label="btnAccount" title="Cuenta">
-                <img src="/musicrecords/img/danielvargas/profile-side-one.jpg" alt="perfil">
+            <button class="btn" id="" aria-label="Ir a cuenta" title="Cuenta">
+                <img src="./profile-side-one.jpg" alt="not compatible" class="btnPhoto">
             </button>
         </div>
     </header>
 
-    <!---->
+    <!-- menu -->
     <header class="menu">
-        <!---->
+        <!-- head menu -->
         <div class="head-menu">
             <div class="sections left">
-                <button class="btn" id="btnMenuClose" aria-label="Abrir menú" title="Cerrar menú">
+                <!-- btn close menu -->
+                <button class="btn" id="btnCloseMenu" aria-label="Cerrar menú" title="Cerrar menú">
                     <span class="material-symbols-outlined">close</span>
                 </button>
-                <div class="title" hidden>Play Music</div>
+                <!-- title -->
+                <div class="title">
+                    <a href="./index.html" target="_top">
+                        Play Music
+                    </a>
+                </div>
             </div>
         </div>
-        <!---->
+        <!-- body menu -->
         <div class="body-menu">
             <!-- home -->
-            <div class="body-menu-item" id="home">
-                <div class="body-menu-item-design">
-                    <div class="body-menu-item-design-hidden">
-                        <span class="material-symbols-outlined footer-menu-icon active">home</span>
-                        <span class="footer-menu-text">Inicio</span>
+            <a href="./index.html" class="linked">
+                <div class="body-menu-item">
+                    <div class="body-menu-item-design">
+                        <div class="body-menu-item-design-hidden">
+                            <span class="material-symbols-outlined active footer-menu-icon">home</span>
+                            <span class="footer-menu-text">Inicio</span>
+                        </div>
                     </div>
                 </div>
-            </div>
+            </a>
             <!-- explore -->
-            <div class="body-menu-item" id="explore">
-                <div class="body-menu-item-design">
-                    <div class="body-menu-item-design-hidden">
-                        <span class="material-symbols-outlined footer-menu-icon">explore</span>
-                        <span class="footer-menu-text">Explorar</span>
+            <a href="./explore.html" class="linked">
+                <div class="body-menu-item">
+                    <div class="body-menu-item-design">
+                        <div class="body-menu-item-design-hidden">
+                            <span class="material-symbols-outlined footer-menu-icon">explore</span>
+                            <span class="footer-menu-text">Explorar</span>
+                        </div>
                     </div>
                 </div>
-            </div>
+            </a>
             <!-- library -->
-            <div class="body-menu-item" id="library">
-                <div class="body-menu-item-design">
-                    <div class="body-menu-item-design-hidden">
-                        <span class="material-symbols-outlined footer-menu-icon">library_music</span>
-                        <span class="footer-menu-text">bibliotecla</span>
+            <a href="./library.html" class="linked">
+                <div class="body-menu-item">
+                    <div class="body-menu-item-design">
+                        <div class="body-menu-item-design-hidden">
+                            <span class="material-symbols-outlined footer-menu-icon">library_music</span>
+                            <span class="footer-menu-text">bibliotecla</span>
+                        </div>
                     </div>
                 </div>
-            </div>
+            </a>
             <!-- podcasts -->
-            <div class="body-menu-item" id="podcasts">
-                <div class="body-menu-item-design">
-                    <div class="body-menu-item-design-hidden">
-                        <span class="material-symbols-outlined footer-menu-icon">podcasts</span>
-                        <span class="footer-menu-text">podcasts</span>
+            <a href="./podcasts.html" class="linked">
+                <div class="body-menu-item">
+                    <div class="body-menu-item-design">
+                        <div class="body-menu-item-design-hidden">
+                            <span class="material-symbols-outlined footer-menu-icon">podcasts</span>
+                            <span class="footer-menu-text">podcasts</span>
+                        </div>
                     </div>
                 </div>
-            </div>
+            </a>
         </div>
-        <!---->
+        <!-- footer menu -->
         <div class="footer-menu">
-            <!---->
-            <div class="footer-menu-item">
-                <div class="footer-menu-item-design">
-                    <div class="footer-menu-item-design-hidden">
-                        <span class="material-symbols-outlined footer-menu-icon">settings</span>
-                        <span class="footer-menu-text">Configuración</span>
+            <!-- settings -->
+            <a href="" class="linked">
+                <div class="footer-menu-item">
+                    <div class="footer-menu-item-design">
+                        <div class="footer-menu-item-design-hidden">
+                            <span class="material-symbols-outlined footer-menu-icon">settings</span>
+                            <span class="footer-menu-text">Configuración</span>
+                        </div>
                     </div>
                 </div>
-            </div>
-            <!---->
-            <div class="footer-menu-item">
-                <div class="footer-menu-item-design">
-                    <div class="footer-menu-item-design-hidden">
-                        <span class="material-symbols-outlined footer-menu-icon">help</span>
-                        <span class="footer-menu-text">Ayuda</span>
+            </a>
+            <!-- help -->
+            <a href="" class="linked">
+                <div class="footer-menu-item">
+                    <div class="footer-menu-item-design">
+                        <div class="footer-menu-item-design-hidden">
+                            <span class="material-symbols-outlined footer-menu-icon">help</span>
+                            <span class="footer-menu-text">Ayuda</span>
+                        </div>
                     </div>
                 </div>
-            </div>
+            </a>
         </div>
         <!---->
         <div class="box-body-menu"></div>
     </header>
 
-    <!---->
+    <!-- audio player -->
     <div class="player">
-        <!---->
+        <!-- left player -->
         <div class="data-song left">
+            <!---->
             <div class="cover">
-                <img src="/musicrecords/img/danielvargas/droptracks.png" alt="portada" id="expand_player">
+                <img src="./droptracks.png" alt="not compatible" id="expand_player">
             </div>
+            <!---->
             <div class="data-info">
+                <!-- title song -->
                 <div class="title-song">Just me (Instrumental Version)</div>
+                <!-- more info -->
                 <div class="more-dats-info">
                     <div class="artist-name">Daniel Vargas</div>
-                    <span></span>
-                    <div class="album-name">Drop tracks</div>
-                    <span></span>
-                    <div class="year-data">2021</div>
                 </div>
             </div>
+            <!---->
             <div class="fav">
-            <button class="btn" id="favorite" aria-label="" title="Agregar a favoritos">
-                <span class="material-symbols-outlined" id="fav">favorite</span>
-            </button>
+                <button class="btn" id="favorite" aria-label="Agregar a favoritos" title="Agregar a favoritos">
+                    <span class="material-symbols-outlined" id="fav">favorite</span>
+                </button>
             </div>
         </div>
         <!---->
         <div class="player-play">
+            <!----
+            <audio controls preload class="audio-player" id="player">
+                <source src="./droptracks/Just me (Instrumental Version).mp3" type="audio/mp3" id="source">
+                Audio no soportado.
+            </audio>-->
+
             <!---->
-            <button class="btnShuffle" id="btnShuffle" aria-label="" title="Activar reproducción aleatoria">
+            <button class="btnShuffle" id="btnShuffle" aria-label="" title="Activar reproducción aleatoria" hidden>
                 <span class="material-symbols-outlined">shuffle</span>
             </button>
             <!---->
-            <button class="btnB" id="skip_previous" aria-label="" title="Anterior">
+            <button class="btn" id="skip_previous" aria-label="" title="Anterior">
                 <span class="material-symbols-outlined">skip_previous</span>
             </button>
             <!---->
-            <button class="btnB" id="play_arrow" aria-label="" title="Reproducir">
+            <button class="btn" id="play_arrow" aria-label="" title="Reproducir">
                 <span class="material-symbols-outlined active">play_arrow</span>
             </button>
             <!---->
-            <button class="btnB" id="skip_next" aria-label="" title="Siguiente">
+            <button class="btn" id="skip_next" aria-label="" title="Siguiente">
                 <span class="material-symbols-outlined active">skip_next</span>
             </button>
             <!---->
@@ -174,46 +205,51 @@
         <!---->
         <div class="action-song right">
             <!---->
-            <button class="btn" id="volume_up" aria-label="" title="Silenciar">
+            <button class="btn" id="volume_up" aria-label="Silenciar" title="Silenciar">
                 <span class="material-symbols-outlined active" id="volumeUpActive">volume_up</span>
             </button>
             <!---->
-            <button class="btn" id="lyrics" aria-label="" title="Letras">
+            <button class="btn" id="lyrics" aria-label="Abrir letras" title="Letras">
                 <span class="material-symbols-outlined" id="lyricsActive">lyrics</span>
             </button>
             <!---->
-            <button class="btn" id="broadcast" aria-label="" title="Conectar a un dispositivo">
+            <button class="btn" id="broadcast" aria-label="Conectar a un dispositivo" title="Conectar a un dispositivo">
                 <span class="material-symbols-outlined">broadcast_on_home</span>
             </button>
             <!---->
-            <button class="btn" id="playlist_add" aria-label="" title="Agregar a una lista de reproducción">
+            <button class="btn" id="playlist_add" aria-label="Agregar a una lista de reproducción" title="Agregar a una lista de reproducción">
                 <span class="material-symbols-outlined">playlist_add</span>
             </button>
             <!---->
-            <button class="btn" id="expand_less" aria-label="" title="Expandir">
+            <button class="btn" id="expand_less" aria-label="Expandir" title="Expandir">
                 <span class="material-symbols-outlined">expand_less</span>
             </button>
         </div>
     </div>
 
-    <!---->
-    <div class="box-mega-player">
+    <!-- box music -->
+    <div class="box-mega-player dark">
+        <!-- head box -->
         <div class="box-mega-head">
             <!---->
-            <div class="box-mega-head-left btn" id="expand_more" aria-label="" title="">
+            <div class="btn left" id="expand_more" aria-label="" title="">
                 <span class="material-symbols-outlined">expand_more</span>
             </div>
             <!---->
-            <div class="box-mega-head-right btn" id="" aria-label="" title="">
+            <div class="btn right" id="" aria-label="" title="">
                 <span class="material-symbols-outlined">more_vert</span>
             </div>
         </div>
+        <!-- body box -->
         <div class="box-mega-boby">
             <!-- left -->
             <div class="box-mega-boby-left">
+                <!---->
                 <div class="box-mega-boby-left-cover">
-                    <img src="/musicrecords/img/danielvargas/droptracks.png" alt="">
+                    <span>drop tracks</span>
+                    <img src="./droptracks.png" alt="not compatible">
                 </div>
+                <!---->
                 <div class="box-mega-boby-left-box-player">
                     <div class="box-mega-boby-left-box-player-line">
                         <span></span>
@@ -605,90 +641,5 @@
             </div>
         </div>
     </div>
-
-    <!---->
-    <div class="lyrics">1</div>
-
-    <!---->
-    <main class="main">
-        <!---->
-        <div class="title-main">
-            <span>Escuchado recientemente</span>
-        </div>
-        <div class="row">
-            <!---->
-            <div class="card column">
-                <div class="card-img">
-                    <img src="/musicrecords/img/danielvargas/droptracks.png" alt="">
-                </div>
-                <div class="tad-card">
-                    <div class="name-card">Drop Tracks</div>
-                    <span></span>
-                    <div class="year-card">2021</div>
-                </div>
-            </div>
-            <!---->
-            <div class="card column">
-                <div class="card-img">
-                    <img src="/musicrecords/img/danielvargas/droptracks.png" alt="">
-                </div>
-                <div class="tad-card">
-                    <div class="name-card">Drop Tracks</div>
-                    <span></span>
-                    <div class="year-card">2021</div>
-                </div>
-            </div>
-            <!---->
-            <div class="card column">
-                <div class="card-img">
-                    <img src="/musicrecords/img/danielvargas/droptracks.png" alt="">
-                </div>
-                <div class="tad-card">
-                    <div class="name-card">Drop Tracks</div>
-                    <span></span>
-                    <div class="year-card">2021</div>
-                </div>
-            </div>
-            <!---->
-            <div class="card column">
-                <div class="card-img">
-                    <img src="/musicrecords/img/danielvargas/droptracks.png" alt="">
-                </div>
-                <div class="tad-card">
-                    <div class="name-card">Drop Tracks</div>
-                    <span></span>
-                    <div class="year-card">2021</div>
-                </div>
-            </div>
-            <!---->
-            <div class="card column">
-                <div class="card-img">
-                    <img src="/musicrecords/img/danielvargas/droptracks.png" alt="">
-                </div>
-                <div class="tad-card">
-                    <div class="name-card">Drop Tracks</div>
-                    <span></span>
-                    <div class="year-card">2021</div>
-                </div>
-            </div>
-        </div>
-        <!---->
-        <div class="title-main">
-            <span>Artistas favoritos</span>
-        </div>
-        <div class="row">
-            <!---->
-            <div class="card-artist column">
-                <div class="card-img-artist">
-                    <img src="/musicrecords/img/danielvargas/profile-side-one.jpg" alt="">
-                </div>
-                <div class="tad-card-artist">
-                    <div class="name-card">Daniel Vargas</div>
-                    <div class="categories-card">Artista</div>
-                </div>
-            </div>
-        </div>
-    </main>
-    
 </body>
 </html>
